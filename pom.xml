@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.packt.examples</groupId>
+  <artifactId>transportation-project</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>transportation-project</name>
+  <description>The transportation Project</description>
+  <modules>
+  	<module>transportation-acq-ear</module>
+  	<module>transportation-acq-ejb</module>
+  	<module>transportation-acq-war</module>
+  	<module>transportation-reporting-ear</module>
+  	<module>transportation-reporting-ejb</module>
+  	<module>transportation-reporting-war</module>
+  	<module>transportation-statistics-batch-jar</module>
+  </modules>
+  <build>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven.surefire-plugin</artifactId>
+  			<version>2.1.7</version>
+  		</plugin>
+  		
+  	</plugins>
+  </build>
+  <dependencies>
+  	<dependency>
+  		<groupId>junit</groupId>
+  		<artifactId>junit</artifactId>
+  		<version>4.11</version>
+  		<scope>test</scope>
+  	</dependency>
+  </dependencies>
+</project>
